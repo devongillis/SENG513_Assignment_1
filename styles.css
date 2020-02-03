@@ -1,0 +1,421 @@
+.title {
+	margin: auto;
+	border-style: solid;
+	text-align:center;
+}
+
+h1 {
+	color: rgb(0, 107, 1);
+	letter-spacing: 3px;
+	font-size: 100px;
+	font-family: Andale Mono, monospace;
+}
+
+h2 {
+	color: rgb(158, 255, 255);
+	font-size: 24px;
+	font-family: Andale Mono, monospace;
+}
+
+h3 {
+	color: rgb(158, 255, 255);
+	font-size: 18px;
+	font-family: Andale Mono, monospace;
+}
+
+.setup_h2_margin {
+	margin-top: 80px;
+}
+
+b {
+	font-family: Andale Mono, monospace;
+}
+
+p {
+	color: rgb(158, 255, 255);
+	font-size: 16px;
+	margin-left: 50px;
+	font-family: Andale Mono, monospace;
+}
+
+ol {
+	margin-left: 28px;
+	color: rgb(158, 255, 255);
+}
+
+li {
+	
+}
+
+.card_block {
+	margin: auto;
+	height: 96px;
+	width: 71px;
+	float: left;
+	margin-left: 50px;
+}
+
+.card_blocks {
+	text-align: center;
+	margin: auto;
+	clear: both;
+	float: none;
+	margin-bottom: 140px;
+}
+
+.empty2 {
+	height: 10px;
+}
+
+.empty3 {
+	height: 80px;
+}
+
+.empty4 {
+	height: 30px;
+}
+
+body {
+	background-color: rgb(97, 0, 0);
+}
+
+button {
+  background-color: rgb(0, 107, 1);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  	font-family: Andale Mono, monospace;
+}
+
+button:hover {
+  background-color: rgb(76, 175, 80);
+  color: white;
+}
+
+.card_table {
+	height: 821px;
+	width: 600px;
+	background-color: rgb(119, 191, 119);
+	clear: both;
+	float: none;
+	transform: scale(0.7);
+	margin: auto;
+	margin-top: -100px;
+	margin-bottom: -100px;
+}
+
+.empty {
+	height:337px;
+}
+
+.empty1 {
+	height:102px;
+}
+
+.player_box {
+	height:337px;
+}
+
+.player_name_tag {
+	margin: auto;
+	text-align: center;
+}
+
+.card_hand {
+	margin: auto;
+	border-style: solid;
+	height: 96px;
+	width: 426px;
+}
+
+.card_slots {
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 116px;
+	width: 334px;
+	background-color: rgb(7, 55, 16);
+	position: relative;
+}
+
+.player_2_card_slots {
+	margin-top: 90px;
+}
+
+.player_1_card_slots {
+	margin-bottom: 90px;
+}
+
+.card_slot_empty {
+	height: 96px;
+	width: 71px;
+	background-color: rgb(85, 212, 78);
+	float: left;
+	margin: 10px 0px 10px 10px;
+}
+
+.symbol {
+	width: 31px;
+	height: 31px;
+	overflow: hidden;
+	margin: 32px 0px 0px 20px;
+}
+
+.symbol img {
+	width: 62px;
+	height: 62px;
+}
+
+.card_slot_symbol_club img {
+	margin: 0px 0px 0px 0px;
+}
+
+.card_slot_symbol_spade img {
+	margin: 0px 0px 0px -31px;
+}
+
+.card_slot_symbol_heart img {
+	margin: -31px 0px 0px 0px;
+}
+
+.card_slot_symbol_diamond img {
+	margin: -31px 0px 0px -31px;
+}
+
+.layered_slot_first_down {
+	position: relative;
+	margin-top: -63px;
+}
+.layered_slot_down {
+	position: relative;
+	margin-top: -81px;
+}
+
+.layered_slot_first_up {
+	position: relative;
+	margin-top: -63px;
+}
+.layered_slot_up1 {
+	position: relative;
+	margin-top: -111px;
+}
+.layered_slot_up2 {
+	position: relative;
+	margin-top: -126px;
+}
+.layered_slot_up3 {
+	position: relative;
+	margin-top: -141px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 200px;
+  background-color: rgb(119, 191, 119);
+  margin-left: 50px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.card_back_1 img {
+	margin: -392px 0px 0px 0px;
+}
+
+.card_back img {
+	margin: -392px 0px 0px 0px;
+}
+
+.card_back {
+	position: relative;
+	margin-top: 20px;
+	left: 50px;
+	float: none;
+}
+
+.card {
+    float: left;
+}
+
+.card {
+	width: 71px;
+	height: 96px;
+	overflow: hidden;
+}
+
+.card_low {
+	margin-bottom: -10px;
+}
+
+.card img {
+	width: 948px;
+	height: 488px;
+}
+
+.C_A img {
+	margin: 0px 0px 0px 0px;
+}
+.C_2 img {
+	margin: 0px 0px 0px -73px;
+}
+.C_3 img {
+	margin: 0px 0px 0px -146px;
+}
+.C_4 img {
+	margin: 0px 0px 0px -219px;
+}
+.C_5 img {
+	margin: 0px 0px 0px -292px;
+}
+.C_6 img {
+	margin: 0px 0px 0px -365px;
+}
+.C_7 img {
+	margin: 0px 0px 0px -438px;
+}
+.C_8 img {
+	margin: 0px 0px 0px -511px;
+}
+.C_9 img {
+	margin: 0px 0px 0px -584px;
+}
+.C_10 img {
+	margin: 0px 0px 0px -657px;
+}
+.C_J img {
+	margin: 0px 0px 0px -730px;
+}
+.C_Q img {
+	margin: 0px 0px 0px -803px;
+}
+.C_K img {
+	margin: 0px 0px 0px -876px;
+}
+
+.S_A img {
+	margin: -98px 0px 0px 0px;
+}
+.S_2 img {
+	margin: -98px 0px 0px -73px;
+}
+.S_3 img {
+	margin: -98px 0px 0px -146px;
+}
+.S_4 img {
+	margin: -98px 0px 0px -219px;
+}
+.S_5 img {
+	margin: -98px 0px 0px -292px;
+}
+.S_6 img {
+	margin: -98px 0px 0px -365px;
+}
+.S_7 img {
+	margin: -98px 0px 0px -438px;
+}
+.S_8 img {
+	margin: -98px 0px 0px -511px;
+}
+.S_9 img {
+	margin: -98px 0px 0px -584px;
+}
+.S_10 img {
+	margin: -98px 0px 0px -657px;
+}
+.S_J img {
+	margin: -98px 0px 0px -730px;
+}
+.S_Q img {
+	margin: -98px 0px 0px -803px;
+}
+.S_K img {
+	margin: -98px 0px 0px -876px;
+}
+
+.H_A img {
+	margin: -196px 0px 0px 0px;
+}
+.H_2 img {
+	margin: -196px 0px 0px -73px;
+}
+.H_3 img {
+	margin: -196px 0px 0px -146px;
+}
+.H_4 img {
+	margin: -196px 0px 0px -219px;
+}
+.H_5 img {
+	margin: -196px 0px 0px -292px;
+}
+.H_6 img {
+	margin: -196px 0px 0px -365px;
+}
+.H_7 img {
+	margin: -196px 0px 0px -438px;
+}
+.H_8 img {
+	margin: -196px 0px 0px -511px;
+}
+.H_9 img {
+	margin: -196px 0px 0px -584px;
+}
+.H_10 img {
+	margin: -196px 0px 0px -657px;
+}
+.H_J img {
+	margin: -196px 0px 0px -730px;
+}
+.H_Q img {
+	margin: -196px 0px 0px -803px;
+}
+.H_K img {
+	margin: -196px 0px 0px -876px;
+}
+
+.D_A img {
+	margin: -294px 0px 0px 0px;
+}
+.D_2 img {
+	margin: -294px 0px 0px -73px;
+}
+.D_3 img {
+	margin: -294px 0px 0px -146px;
+}
+.D_4 img {
+	margin: -294px 0px 0px -219px;
+}
+.D_5 img {
+	margin: -294px 0px 0px -292px;
+}
+.D_6 img {
+	margin: -294px 0px 0px -365px;
+}
+.D_7 img {
+	margin: -294px 0px 0px -438px;
+}
+.D_8 img {
+	margin: -294px 0px 0px -511px;
+}
+.D_9 img {
+	margin: -294px 0px 0px -584px;
+}
+.D_10 img {
+	margin: -294px 0px 0px -657px;
+}
+.D_J img {
+	margin: -294px 0px 0px -730px;
+}
+.D_Q img {
+	margin: -294px 0px 0px -803px;
+}
+.D_K img {
+	margin: -294px 0px 0px -876px;
+}

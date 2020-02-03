@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="title">
+			<div class="title_objects">
+				<h1 class="title_name">Suit Runs</h1>
+				<button onclick="window.location.href = 'intro.html';">Intro</button>
+				<button onclick="window.location.href = 'setup.html';">Setup</button>
+				<button onclick="window.location.href = 'gameplay.html';">Gameplay</button>
+				<button onclick="window.location.href = 'strategies.html';">Strategies</button>
+			</div>
+		</div>
+		
+		<h2>Gameplay</h2>
+		
+		<p>
+		Each player on their turn will play one card from their hand and place into one of 
+		their own run piles or the shared discard piles (respective of that suit) and then 
+		pick up a card either from the shared discard piles (if any cards are present) or 
+		the draw deck (picking up a card marks the end of your turn). When the last card 
+		has been drawn from the draw pile the game immediately ends (this means the last 
+		card is not playable).
+		</p>
+		
+		<p>
+		Each card has a respective point value except for face cards and aces (these are 
+		multiplier and wild cards), 2 is worth 2 points and 10 is worth 10 points. Face cards 
+		multiply the final point total at the end of the game.
+		</p>
+		
+		<p>
+		Ace is wild, King is a multiplier, Queen is a multiplier, Jack is a multiplier, 10 is a point card
+		</p>
+		<div class= "card_blocks">
+			<div class= "card_block">
+				<div class="card S_A">
+					<img src="cards.png" alt="cards">
+				</div>
+			</div>
+			<div class= "card_block">
+				<div class="card S_K">
+					<img src="cards.png" alt="cards">
+				</div>
+			</div>
+			<div class= "card_block">
+				<div class="card S_Q">
+					<img src="cards.png" alt="cards">
+				</div>
+			</div>
+			<div class= "card_block">
+				<div class="card S_J">
+					<img src="cards.png" alt="cards">
+				</div>
+			</div>
+			<div class= "card_block">
+				<div class="card S_10">
+					<img src="cards.png" alt="cards">
+				</div>
+			</div>
+		</div>
+		<p>
+		Except for the discard piles, cards must be laid down so that each new card 
+		in the run is higher than the previous for that suit (can play a 5 on a 2 but not a 2 on
+		a 5).
+		</p>
+		<div class= "card_blocks">
+			<div class= "card_block">
+				<div class="card S_2">
+					<img src="cards.png" alt="cards">
+				</div>
+				<div class="card S_5 layered_slot_down">
+					<img src="cards.png" alt="cards">
+				</div>
+			</div>
+		</div>
+		<p>
+		Aces act as wild cards and when played will immediately act as the “next” card up,
+		up to the value of 10. (Think of an ace as a way to bypass a lower card you don’t yet 
+		have, if the ten has already been played then the ace is worthless as there is no nigher card than a ten. aces can only act 
+		as point cards, not multiplier cards). Here the ace is acting as a 4.
+		</p>
+		<div class= "card_blocks empty2">
+			<div class= "card_block">
+				<div class="card D_3">
+					<img src="cards.png" alt="cards">
+				</div>
+				<div class="card D_A layered_slot_down">
+					<img src="cards.png" alt="cards">
+				</div>
+				<div class="card D_7 layered_slot_down">
+					<img src="cards.png" alt="cards">
+				</div>
+			</div>
+		</div>
+		<p>
+		Multiplier cards are played before the point cards (think of them having point values 
+		of zero) and more than one multiplier can be played in a run. They also don't need to 
+		be played in the order JQK.
+		</p>
+		<div class= "card_blocks empty2">
+			<div class= "card_block">
+				<div class="card D_Q">
+					<img src="cards.png" alt="cards">
+				</div>
+				<div class="card D_J layered_slot_down">
+					<img src="cards.png" alt="cards">
+				</div>
+				<div class="card D_4 layered_slot_down">
+					<img src="cards.png" alt="cards">
+				</div>
+			</div>
+		</div>
+		<p>
+		Once 
+		a card has been played in your own run pile it cannot be removed. When starting a 
+		pile an automatic 20 point deduction is applied to that pile thus the equation to calculate your 
+		total for that pile at the end of the run is:
+		</p>
+		
+		<p>
+		(card_points - 20) * (1 + multiplier_cards) = new_total
+		</p>
+		
+		<p>
+		This means that if your card points don't atleast match 20, then you will score negative in that run.
+		Note: you can start as many or as few runs as you want.
+		</p>
+		
+		<h3>
+		Sample Senario 1:
+		</h3>
+		<div class= "card_blocks empty3">
+			<div class= "card_block">
+				<div class="card D_K">
+					<img src="cards.png" alt="cards">
+				</div>
+				<div class="card D_Q layered_slot_down">
+					<img src="cards.png" alt="cards">
+				</div>
+				<div class="card D_2 layered_slot_down">
+					<img src="cards.png" alt="cards">
+				</div>
+				<div class="card D_3 layered_slot_down">
+					<img src="cards.png" alt="cards">
+				</div>
+				<div class="card D_4 layered_slot_down">
+					<img src="cards.png" alt="cards">
+				</div>
+				<div class="card D_A layered_slot_down">
+					<img src="cards.png" alt="cards">
+				</div>
+				<div class="card D_7 layered_slot_down">
+					<img src="cards.png" alt="cards">
+				</div>
+				<div class="card D_9 layered_slot_down">
+					<img src="cards.png" alt="cards">
+				</div>
+			</div>
+		</div>
+		<p>
+		If you have the KQ234A79 in a run then you first add 2 + 3 + 4 + 5(ace is
+		in this case worth 5) + 7 + 9 = 30, you also have two multiplier cards (K and Q), thus your point total is:
+		</p>
+		
+		<p>
+		(30 - 20) * (1 + 2) = (10) * (3) = 30
+		</p>
+		
+		<p>
+		You have scored 30 points in that pile.
+		</p>
+		
+		<h3>
+		Sample Senario 2:
+		</h3>
+		<div class= "card_blocks empty4">
+			<div class= "card_block">
+				<div class="card H_J">
+					<img src="cards.png" alt="cards">
+				</div>
+				<div class="card H_3 layered_slot_down">
+					<img src="cards.png" alt="cards">
+				</div>
+				<div class="card H_A layered_slot_down">
+					<img src="cards.png" alt="cards">
+				</div>
+				<div class="card H_7 layered_slot_down">
+					<img src="cards.png" alt="cards">
+				</div>
+			</div>
+		</div>
+		<p>
+		If you have the J3A7 in a run then you first add 2 + 3 + 4(ace is
+		in this case worth 4) + 7 = 14, you also have one multiplier card (J), thus your point total is:
+		</p>
+		
+		<p>
+		(14 - 20) * (1 + 1) = (-6) * (2) = -12
+		</p>
+		
+		<p>
+		You have scored -12 points in that pile.
+		</p>
+		
+		<h3>
+		Notes about runs:
+		</h3>
+		
+		<p>
+		The strongest run is of course when 12 cards are present with the ace being able to replace
+		any one of point cards, in the order:
+		</p>
+		<ol>
+			<li>J,Q,K</li>
+			<li>J,Q,K</li>
+			<li>J,Q,K</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+		</ol> 
+		
+		
+		<h3>
+		Totaling up points
+		</h3>
+		
+		<p>
+		Each pile is tallied up and the scores are combined, the game consists of 3 rounds, (or any 
+		number you please). the winner is whom ever achieves the highest score at the end of the game.
+		</p>
+		
+		<table>
+			<tr>
+				<th>Player 1</th>
+				<th>Player 2</th>
+			</tr>
+			<tr>
+				<td>35</td>
+				<td>-5</td>
+			</tr>
+			<tr>
+				<td>15</td>
+				<td>60</td>
+			</tr>
+			<tr>
+				<td>42</td>
+				<td>34</td>
+			</tr>
+			<tr>
+				<td>Total:</td>
+				<td>Total:</td>
+			</tr>
+			<tr>
+				<td>92</td>
+				<td>89</td>
+			</tr>
+		</table>
+	
+	</body>
+</html>
